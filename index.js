@@ -124,7 +124,7 @@ function createBot() {
             `\x1b[32m[Afk Bot] Starting to move to target location (${pos.x}, ${pos.y}, ${pos.z})\x1b[0m`
          );
          bot.pathfinder.setMovements(defaultMove);
-         bot.pathfinder.setGoal(new GoalBlock(pos.x, pos.z, pos.y));
+         bot.pathfinder.setGoal(new GoalBlock(pos.x, pos.y, pos.z));
       }
 
       if (config.utils['anti-afk'].enabled) {
