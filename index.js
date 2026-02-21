@@ -121,10 +121,10 @@ function createBot() {
 
       if (config.position.enabled) {
          console.log(
-            `\x1b[32m[Afk Bot] Starting to move to target location (${pos.-9}, ${pos.-23}, ${pos.86})\x1b[0m`
+            `\x1b[32m[Afk Bot] Starting to move to target location (${pos.x}, ${pos.y}, ${pos.z})\x1b[0m`
          );
          bot.pathfinder.setMovements(defaultMove);
-         bot.pathfinder.setGoal(new GoalBlock(pos.-16, pos.-16, pos.86));
+         bot.pathfinder.setGoal(new GoalBlock(pos.x, pos.z, pos.y));
       }
 
       if (config.utils['anti-afk'].enabled) {
